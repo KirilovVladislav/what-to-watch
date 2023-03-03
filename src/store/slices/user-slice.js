@@ -10,6 +10,8 @@ const initialState = {
     name: '',
     myList: [],
     filmsFromMyList: [],
+    promoFilm: {},
+    promoId: '',
 }
 
 export const userSlice = createSlice({
@@ -49,6 +51,10 @@ export const userSlice = createSlice({
             state.myList = state.myList.filter((film) => film != action.payload.id)
             state.filmsFromMyList = state.filmsFromMyList.filter((film) => film.id != action.payload.id)
         },
+        setPromoFilm: (state, action) => {
+            state.promoFilm = action.payload
+            state.promoId = action.payload.id
+        }
     }
 })
 
@@ -59,7 +65,8 @@ export const {
     setFilmsFromMyList,
     setMyList,
     addMyList,
-    deleteMyList
+    deleteMyList,
+    setPromoFilm
 } = userSlice.actions
 
 export default userSlice.reducer

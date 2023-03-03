@@ -7,13 +7,13 @@ import {
 	Content,
 	Header,
 } from '../../widgets'
-import { usePromoFilm } from '../../hooks'
 import { UserBlock } from '../../components'
+import { useSelector } from 'react-redux'
 
 
 const Main = () => {
-	const [promoId, film] = usePromoFilm()
-	
+	const {promoFilm: film, promoId} = useSelector((state) => state.user)
+
 	return promoId && (
 		<>
 			<FilmCard >

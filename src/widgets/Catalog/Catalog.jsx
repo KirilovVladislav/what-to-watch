@@ -10,13 +10,15 @@ export const Catalog = memo(({ genre = 'All genres', size = 4, title = 'Catalog'
 	const [activeGenre, setActiveGenre] = useState(genre)
 	const [films, setFilms] = useState([])
 	const [totalCount, setTotalCount] = useState(0)
-
+	
 	let paramsFetchAllFilms = useMemo(() => ({
 		size: size,
 		excludeId: idPromoFilm,
 		activeGenre: activeGenre !== 'All genres' ? activeGenre : undefined,
-	}), [activeGenre, size, idPromoFilm])
-
+	}), [size, idPromoFilm, activeGenre])
+	
+	useEffect(() => {setActiveGenre(genre)}, [genre])
+	
 	useEffect(() => {
 		if (!myList) {
 			getFilmsLength(idPromoFilm, paramsFetchAllFilms.activeGenre)
