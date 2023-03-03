@@ -1,0 +1,9 @@
+.reviewsCol {
+    width: calc((100% - 60px) / 2);
+    margin-right: 60px;
+    max-width: 380px;
+}
+
+.reviewsCol:last-child {
+    margin-right: 0;
+}

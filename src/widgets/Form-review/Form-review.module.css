@@ -1,0 +1,78 @@
+.review {
+    padding-top: 62px;
+    width: 520px;
+    margin: 0 auto;
+}
+
+.text {
+    background: #E8C3C4;
+    border-radius: 8px;
+}
+
+.textarea {
+    display: block;
+    width: 100%;
+    border: none;
+    background: none;
+    resize: vertical;
+    height: 150px;
+    min-height: 150px;
+    padding: 25px;
+    font-size: 17px;
+    color: #252525;
+    line-height: 24px;
+}
+
+.textarea::-webkit-input-placeholder {
+    opacity: 1;
+    color: #252525;
+}
+
+.textarea:-ms-input-placeholder {
+    opacity: 1;
+    color: #252525;
+}
+
+.textarea::-ms-input-placeholder {
+    opacity: 1;
+    color: #252525;
+}
+
+.textarea::placeholder {
+    opacity: 1;
+    color: #252525;
+}
+
+.submit {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    padding: 10px 20px;
+}
+
+.btn {
+    display: block;
+    padding: 0;
+    border: none;
+    background: none;
+    font-size: 17px;
+    color: #866866;
+    letter-spacing: 0;
+    line-height: 27px;
+    font-weight: bold;
+    cursor: pointer;
+    -webkit-transition: opacity 0.2s;
+    transition: opacity 0.2s;
+}
+
+.btn:hover,
+.btn:disabled {
+    opacity: 0.5;
+}
+
+.btn:disabled {
+    cursor: default;
+}

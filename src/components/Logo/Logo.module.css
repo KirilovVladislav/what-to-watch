@@ -1,0 +1,57 @@
+.link {
+    border: 1px solid rgba(223, 207, 119, 0.36);
+    border-radius: 8px;
+    width: 93px;
+    height: 54px;
+    color: #D9CD8D;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    font-weight: bold;
+    text-decoration: none;
+    -webkit-transition: color 0.2s, border-color 0.2s;
+    transition: color 0.2s, border-color 0.2s;
+}
+
+.link[href]:hover,
+.link[href]:focus {
+    border-color: rgba(84, 80, 62, 0.36);
+    color: #54503E;
+}
+
+.linkLight {
+    border: 1px solid rgba(84, 80, 62, 0.36);
+    margin: 0 auto 24px;
+    color: #54503E;
+}
+
+.linkLight[href]:hover,
+.linkLight[href]:focus {
+    border-color: rgba(223, 207, 119, 0.36);
+    color: #D9CD8D;
+}
+
+.letter {
+    font-size: 26px;
+}
+
+.letter1 {
+    -webkit-transform: rotate(-9deg) translateY(5px);
+    transform: rotate(-9deg) translateY(5px);
+}
+
+.letter2 {
+    font-size: 30px;
+}
+
+.letter3 {
+    -webkit-transform: rotate(8deg) translateY(5px);
+    transform: rotate(8deg) translateY(5px);
+}

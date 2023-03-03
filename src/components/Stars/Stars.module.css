@@ -1,0 +1,44 @@
+.stars {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    flex-direction: row-reverse;
+    margin-bottom: 15px;
+}
+
+.input {
+    display: none;
+}
+
+/* .input:checked~.label::after {
+    color: rgba(56, 44, 42, 0.7);
+} */
+
+.check.label::after {
+    color: rgba(56, 44, 42, 0.7);
+}
+
+.label {
+    font-size: 0;
+    line-height: 0;
+    display: block;
+    padding-right: 10px;
+    cursor: pointer;
+}
+
+.label:first-child {
+    padding-right: 0;
+}
+
+.label::after {
+    content: '★';
+    display: block;
+    font-size: 32px;
+    line-height: 36px;
+    color: rgba(56, 44, 42, 0.36);
+    -webkit-transition: color 0.2s;
+    transition: color 0.2s;
+}

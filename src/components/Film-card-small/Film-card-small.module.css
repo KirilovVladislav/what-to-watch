@@ -1,0 +1,93 @@
+.card {
+	border-radius: 6px;
+	overflow: hidden;
+	position: relative;
+	-webkit-transition: 0.2s -webkit-transform;
+	transition: 0.2s -webkit-transform;
+	transition: 0.2s transform;
+	transition: 0.2s transform, 0.2s -webkit-transform;
+}
+
+.card:hover {
+	z-index: 3;
+	-webkit-transform: scale(1.2);
+	transform: scale(1.2);
+}
+
+.card img {
+	vertical-align: top;
+	width: 100%;
+	height: 100%;
+	-o-object-fit: cover;
+	font-family: "object-fit:cover";
+	object-fit: cover;
+}
+
+.image {
+	position: relative;
+	z-index: 1;
+	height: 175px;
+}
+
+.image::after {
+	content: '';
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(25%, rgba(0, 0, 0, 0)), color-stop(97%, rgba(0, 0, 0, 0.63)));
+	background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 0.63) 97%);
+}
+
+.title {
+	position: absolute;
+	z-index: 2;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	padding: 10px 15px;
+	margin: 0;
+	font-size: 17px;
+	line-height: 20px;
+	font-weight: 500;
+}
+
+.link {
+	display: inline-block;
+	vertical-align: top;
+	text-decoration: none;
+	color: inherit;
+}
+
+.card:hover .btn {
+	opacity: 1;
+}
+
+.btn {
+	position: absolute;
+	z-index: 2;
+	opacity: 0.3;
+    border: none;
+    cursor: pointer;
+    background: none;
+    padding: 13px;
+    -webkit-transition: 0.2s background-color, 0.2s -webkit-transform;
+    transition: 0.2s background-color, 0.2s -webkit-transform;
+    transition: 0.2s background-color, 0.2s transform;
+    transition: 0.2s background-color, 0.2s transform, 0.2s -webkit-transform;
+    will-change: transform;
+	right: 10px;
+}
+
+.btn:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1) rotate(90deg);
+}
+
+.btn img,
+.btn svg {
+    vertical-align: top;
+	transform: rotate(45deg)
+}

@@ -1,0 +1,41 @@
+.breadcrumbs {
+    margin: 0 20px;
+    margin-right: auto;
+}
+
+.list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.item:not(:last-child)::after {
+    content: '/';
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 17px;
+    line-height: 20px;
+}
+
+.link {
+    display: block;
+    text-decoration: none;
+    color: #EEE5B5;
+    font-size: 17px;
+    line-height: 20px;
+    -webkit-transition: color 0.2s;
+    transition: color 0.2s;
+}
+
+.link[href]:hover {
+    color: #DFCF77;
+}

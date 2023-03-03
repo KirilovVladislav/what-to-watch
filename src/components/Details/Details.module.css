@@ -1,0 +1,23 @@
+.detailsItem {
+    font-size: 19px;
+    line-height: 30px;
+}
+
+.detailsName {
+    display: block;
+    color: #252525;
+    font-weight: bold;
+}
+
+.detailsValue {
+    color: #131313;
+}
+
+.textCol {
+    width: 155px;
+    margin-right: 35px;
+}
+
+.textCol:last-child {
+    margin-right: 0;
+}

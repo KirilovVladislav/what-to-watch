@@ -1,0 +1,44 @@
+.rating {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding-top: 35px;
+    padding-bottom: 25px;
+}
+
+.score {
+    background: rgba(255, 255, 255, 0.24);
+    border-radius: 8px;
+    font-size: 30px;
+    line-height: 36px;
+    color: rgba(0, 0, 0, 0.5);
+    padding: 8px 12px;
+    margin-right: 9px;
+}
+
+.meta {
+    margin: 0;
+    font-size: 19px;
+    color: rgba(0, 0, 0, 0.5);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.level {
+    font-weight: bold;
+}
+
+.level::after {
+    content: '·';
+    margin-left: 4px;
+    margin-right: 4px;
+    font-weight: 400;
+}
+
+.count {
+    color: #382C2A;
+}
